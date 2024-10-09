@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+  }
+  
+  div { 
+    padding: 5px; 
+    font-size: 16px;
+  }
+  
+  /* フォーム全体の調整 */
+  .form-control {
+    height: 35px; /* 高さを少し小さくする */
+    width: 180px; /* 幅を狭くする */
+    padding: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  /* フォーム全体の配置を縦に揃える */
+  label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  /* 各要素を中央揃えにする */
+  .jumbotron {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px; /* フォーム全体の幅を少し狭く */
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  fieldset {
+    border: none;
+  }
+  
+  legend {
+    font-size: 22px;
+  }
+  
+  /* 送信ボタンの装飾 */
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  #return{
+    background-color: #808080;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+  }
+
+
+  /* 管理者フラグのスタイル */
+  #adminFlagContainer {
+    margin-top: 5px; /* 部署との距離を縮める */
+    display: flex;
+  }
+  #adminFlagContainer label {
+    margin-left: 0; /* ラベルの左側のマージンを0にする */
+    margin-top: 2px; /* 部署との距離を縮める */
+    margin-bottom: 2px; /* 部署との距離を縮める */
+  }
+
+  #leaveFlagContainer {
+    margin-top: 5px; /* 部署との距離を縮める */
+    display: flex;
+  }
+  #leaveFlagContainer label {
+    margin-left: 0; /* ラベルの左側のマージンを0にする */
+    margin-top: 2px; /* 部署との距離を縮める */
+    margin-bottom: 2px; /* 部署との距離を縮める */
+  }
+  input[type="checkbox"] {
+    transform: scale(1.5); /* サイズを1.5倍に拡大 */
+    margin-right: 10px; /* チェックボックスとラベルの間にスペースを追加 */
+  }
